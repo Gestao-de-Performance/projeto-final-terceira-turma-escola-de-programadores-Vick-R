@@ -256,15 +256,28 @@ span{
 
 .portifolio-layer h4 {
     font-size: 1.8rem;
+    margin-top: 4rem;
+}
+
+.portifolio-layer p{
+    margin: 0.2rem 0 0.5;
+
 }
 
 .portifolio-layer a {
-    display: inline flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    margin-top: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: var(--text-color);
     border-radius: 50%;
+
+}
+
+.portifolio-layer a i {
+    font-size: 1.5rem;
+    color: var(--color-02)
 
 }
