@@ -149,7 +149,7 @@ span{
     border: solid 0.15rem var(--bg-color01);
     background-color: var(--bg-color02);
     transition: 0.5s ease;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .servicos-container .servicos-box:hover {
@@ -180,7 +180,7 @@ span{
 }
 
 .servicos-box a{
-    width: 30%;
+    /* width: 30%; */
     margin: auto;
         
 }
@@ -294,6 +294,7 @@ form {
 }
 
 form .input-box {
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -382,4 +383,188 @@ footer{
 /* /menu hamburguer */
 
 /*media queries*/
+/*@media (min-width: 0px){
+    .menu-hamburguer{
+         display: block; 
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav-responsiva{
+        display: block;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+
+    }
+
+    section {
+        padding: 10rem 0.1rem;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .home h3{
+        font-size: 18px;
+    }
+
+    .home-content{
+        width: 95%;
+    }
+
+    .home-content div{
+        text-align: center;
+    }
+
+    .servicos h2{
+        font-size: 25px;
+        
+    }
+
+    .servicos-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos{
+        margin-top: -13rem;
+    }
+
+    .servicos-box{
+        width: 95%;
+    }
+
+    
+}*/
+
+@media screen and (max-width: 1920px){
+    .servicos-container .servicos-box{
+         width: 60%; 
+    }
+
+    .servicos-box a{
+         width: 30%;
+    } 
+
+
+}
+
+@media screen and (max-width: 1440px){
+    .servicos-container .servicos-box{
+         width: 80%; 
+        
+    }
+
+    .servicos-box a{
+        width: 40%;
+   }
+
+}
+
+@media screen and (max-width: 1024px){
+    .portifolio-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .home-content{
+        width: 100%;
+    }
+
+    .home-img{
+        width: 100%;
+        
+    }
+
+    .servicos-container .servicos-box{
+        width: 100%; 
+       
+    }
+
+    .portifolio-box{
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 360px){ 
+
+    section {
+        padding: 10rem 0.1rem;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .home h3{
+        font-size: 18px;
+    }
+
+    .home-content{
+        width: 85%;
+    }
+
+    .home-content div{
+        text-align: center;
+    }
+
+    .servicos h2{
+        font-size: 25px;
+        
+    }
+
+    .servicos-container{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0 0 0 1.2rem;
+    }
+
+    .servicos{
+        margin-top: -13rem;
+    }
+
+    .servicos-box a{
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .servicos-box h3{
+        font-size: 20px;
+    }
+
+    .servicos-box p{
+        font-size: 15px;
+    }
+
+    .portifolio h2{
+        font-size: 25px;
+    }
+
+    .contato h2{
+        font-size: 25px;
+    }
+
+    .contato a{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+
+
+    
+
+    
+}
+
+
+
 
