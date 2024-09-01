@@ -57,7 +57,17 @@ header{
 
 }
 
-.nav a{
+.nav-responsiva{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color01);
+}
+
+.nav a, .nav-responsiva a{
    font-size: 1.2rem;
    color: var(--text-color);
    padding: 0.5rem 1rem;
@@ -67,7 +77,7 @@ header{
 
 }
 
-.nav a:hover{
+.nav a:hover, .nav-responsiva a:hover{
     color: var(--main-color)
 }
 
@@ -350,7 +360,7 @@ footer{
 
 }
 
-/* menu hamburguer */
+/* ==== menu hamburguer ==== */
 .menu-hamburguer{
     display: none;
     cursor: pointer;
@@ -380,67 +390,51 @@ footer{
     transform: translate(0, -0.65rem) rotate(-45deg);   
 
 }
-/* /menu hamburguer */
 
-/*media queries*/
-/*@media (min-width: 0px){
+.menu-hamburguer{
+    display: none; 
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+    width: 2rem;
+    height: 0.3rem;
+    background-color: var(--text-color);
+    margin: 0.4rem 0;
+    transition: 0.3s ease;
+}
+
+.change .bar1 {
+    transform: translate(0, 0.65rem) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -0.65rem) rotate(45deg);
+}
+
+/* ==== /Menu hamburguer ==== */
+
+
+/* ==== Sessão de media screen ==== */
+
+ @media screen and (max-width: 1920px){
     .menu-hamburguer{
-         display: block; 
+        display: none;
     }
 
     .nav{
-        display: none;
-    }
-
-    .nav-responsiva{
         display: block;
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-
     }
 
-    section {
-        padding: 10rem 0.1rem;
-    }
-
-    .home-img {
+    .nav-responsiva, .nav-responsiva a{
         display: none;
+
     }
 
-    .home h3{
-        font-size: 18px;
-    }
-
-    .home-content{
-        width: 95%;
-    }
-
-    .home-content div{
-        text-align: center;
-    }
-
-    .servicos h2{
-        font-size: 25px;
-        
-    }
-
-    .servicos-container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicos{
-        margin-top: -13rem;
-    }
-
-    .servicos-box{
-        width: 95%;
-    }
-
-    
-}*/
-
-@media screen and (max-width: 1920px){
     .servicos-container .servicos-box{
          width: 60%; 
     }
@@ -465,12 +459,19 @@ footer{
 }
 
 @media screen and (max-width: 1024px){
+
     .portifolio-container{
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 767px){
+
+    section {
+        padding: 10rem 2rem;
+    }
+
+
     .home-content{
         width: 100%;
     }
@@ -491,7 +492,93 @@ footer{
 
 }
 
+@media screen and (max-width: 414px){
+    .menu-hamburguer{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav-responsiva a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+
+
+    }
+
+    section {
+        padding: 10rem 1rem;
+    }
+
+    .home-img {
+        display: none;
+    }
+    .home h3{
+        font-size: 18px;
+    }
+
+    .servicos h2{
+        font-size: 25px;
+        
+    }
+
+    .home h1{
+        font-size: 35px;
+    }
+
+    .home-content p{
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .servicos-box a {
+        width: 60%;
+    }
+
+    .servicos-container{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0 0 0 1.2rem;
+    }
+
+    .servicos{
+        margin-top: -13rem;
+    }
+
+    .portifolio{
+        margin-top: -8rem;
+    }
+
+    .contato h2{
+        font-size: 28px;
+    }
+
+    .contato a{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+}
+
 @media screen and (max-width: 360px){ 
+
+    .menu-hamburguer{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
 
     section {
         padding: 10rem 0.1rem;
@@ -559,11 +646,10 @@ footer{
     }
 
 
-
-    
-
-    
+        
 }
+/* ==== /Sessão de media screen ==== */
+
 
 
 
