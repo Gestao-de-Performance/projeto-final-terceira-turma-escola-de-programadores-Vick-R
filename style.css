@@ -11,8 +11,9 @@
 
     /* cor de teste */
 
-    --color-01: #999999;
+    --color-01: #14032c;
     --color-02: #eb4141;
+    --color-03: #3fbfff;
 }
 
 *{
@@ -485,6 +486,9 @@ footer{
         width: 100%; 
        
     }
+    .portifolio-layer a {
+        margin-top: 0.2rem;
+    }
 
     .portifolio-box{
         margin-top: 0;
@@ -555,6 +559,25 @@ footer{
     .portifolio{
         margin-top: -8rem;
     }
+
+    .portifolio-layer h4 {
+        font-size: 18px;
+        font-weight: 600;
+        /* background-color: var(--color-02); */
+    }
+
+    .portifolio-layer p{
+        display: none;
+    }
+
+    .portifolio-layer a {
+        margin-top: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+
+    
 
     .contato h2{
         font-size: 28px;
@@ -632,6 +655,15 @@ footer{
     .portifolio h2{
         font-size: 25px;
     }
+
+    .portifolio-layer a {
+        margin-top: 0.2rem;
+    }
+
+    form{
+        padding: 1rem;
+    }
+
 
     .contato h2{
         font-size: 25px;
