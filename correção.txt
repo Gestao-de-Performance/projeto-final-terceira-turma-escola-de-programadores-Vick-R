@@ -1,0 +1,4 @@
+Vick, ficou muito bom o seu projeto.
+Você poderia ter utilizado o @media screen (max-width: 767px) para adicionar o menu no mobile.
+
+Mas você está de parabéns, o projeto ficou muito bom.
