@@ -467,6 +467,21 @@ footer{
 }
 
 @media screen and (max-width: 767px){
+    .menu-hamburguer{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav-responsiva a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+
+
+    }
 
     section {
         padding: 10rem 2rem;
@@ -497,21 +512,6 @@ footer{
 }
 
 @media screen and (max-width: 414px){
-    .menu-hamburguer{
-        display: block;
-    }
-
-    .nav{
-        display: none;
-    }
-
-    .nav-responsiva a{
-        display: block;
-        font-size: 1.1rem;
-        margin: 0.5rem 0;
-
-
-    }
 
     section {
         padding: 10rem 1rem;
